@@ -7,6 +7,11 @@
 
 /* font-family: "Inter", sans-serif; */
 
+@font-face{
+    font-family: Miama-font;
+    src: url(../font/Miama.ttf);
+}
+
 body {
     font-family: "Inter", sans-serif;
     background-color: black;
@@ -60,6 +65,8 @@ header {
     max-width: 1060px;
     padding-top: 57px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 nav {
@@ -127,7 +134,7 @@ nav ul li a {
 }
 
 .banner-title span {
-    font-family: "Dancing Script", cursive;
+    font-family: Miama-font;
     font-size: 4.9rem;
     line-height: 120%;
     font-weight: 400;
@@ -137,10 +144,15 @@ nav ul li a {
     margin: 1.75rem 0;
 }
 
+
 .banner-content .download-btn {
     background: none;
     /* border: 2px solid var(--primary-font-color); */
     border: 2px solid white;
+}
+
+.banner-img-mobile{
+display: none;
 }
 
 .banner-img img {
@@ -148,18 +160,39 @@ nav ul li a {
     /* height: 580px; */
 }
 
+.video-tutorial-btn .play-icon{
+    height: 40px;
+    width: 40px;
+    background-color:var(--third-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.video-tutorial-btn .play-icon i{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .video-tutorial-btn {
     padding: 1rem 1.5rem;
+    text-align: left;
     background-color: rgba(48, 48, 48, 0.54);
     border: none;
     border-radius: 1rem;
     position: absolute;
     bottom: 10%;
     left: 0;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
 }
 
 .free-workout-video-btn {
     padding: 1rem 1.5rem;
+    text-align: left;
     background-color: rgba(48, 48, 48, 0.54);
     border: none;
     border-radius: 1rem;
@@ -173,6 +206,8 @@ nav ul li a {
     color: var(--primary-font-color);
     font-size: 1.5rem;
     line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+
 }
 
 /* main section  */
@@ -180,6 +215,8 @@ nav ul li a {
 main>section {
     max-width: 1060px;
     margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .change-habit-section {
@@ -332,7 +369,7 @@ main>section {
 .img-content span {
     padding: 1.4rem;
     font-size: 0.9rem;
-    max-width: 60%;
+    max-width: 70%;
     color: white;
 }
 
@@ -377,7 +414,7 @@ main>section {
 
 .our-team-section {
     margin-top: 5.5rem;
-
+   
 }
 
 .our-team-section .our-team-section-head {
@@ -642,7 +679,8 @@ footer {
     max-width: 1060px;
     margin: 0 auto;
     padding-top: 4rem;
-
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* .footer-columns-container{
@@ -751,8 +789,15 @@ footer .footer-links li a {
         width: 70%;
     }
 
+    .banner-btns {
+        max-width: 390px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
     .btn-primary {
-        padding: 1rem 2.5rem;
+        padding: 1rem 2.8rem;
         font-size: 0.9rem;
         margin-bottom: 0.5rem;
     }
@@ -761,6 +806,24 @@ footer .footer-links li a {
         width: 100%;
         margin-top: 3rem;
     }
+
+    .banner-img-desk-tab{
+        display: none;
+    }
+
+    .banner-img-mobile{
+        display: block;
+    }
+
+    .free-workout-video-btn {
+        top: 12%;
+    }
+
+    .video-tutorial-btn {
+        bottom: 31%;
+    }
+
+
 
     main section {
         padding-left: 20px;
@@ -777,6 +840,16 @@ footer .footer-links li a {
 
     .change-habit-section-body {
         grid-template-columns: 1fr;
+    }
+
+    .change-habit-section .card {
+        text-align: center;
+        max-width: 80%;
+        margin: auto;
+    }
+
+    .change-habit-section-body .card .card-img img {
+        width: 80%;
     }
 
     .run-extra-mile-section {
@@ -805,6 +878,10 @@ footer .footer-links li a {
 
     .run-extra-mile-section .run-for-mobile {
         display: block;
+    }
+    .run-extra-mile-content .btn-primary {
+        padding: 1rem 4.4rem;
+        width: 100%;
     }
 
     .our-team-section {
@@ -1065,6 +1142,7 @@ footer .footer-links li a {
     .img-content span {
         max-width: 80%;
     }
+
 
     main .bmi-calculate-section {
         margin-top: 4.5rem;
