@@ -1072,9 +1072,10 @@ footer .footer-links li a {
         bottom: 25%;
     }
 
-    .free-workout-video-btn {
-        top: 13%;
-    }
+ .free-workout-video-btn {
+    top: 13%;
+    right: -10%;
+}
 
     main>section {
         padding-left: 1.9rem;
@@ -1191,4 +1192,12 @@ footer .footer-links li a {
     }
 
 
+<<<<<<< HEAD
 }
+=======
+
+
+
+
+}
+>>>>>>> c52854c86afee29543d7bd66980e80178ee93b80
