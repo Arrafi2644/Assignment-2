@@ -135,7 +135,7 @@ nav ul li a {
 
 .banner-title span {
     font-family: Miama-font;
-    font-size: 4.9rem;
+    font-size: 5.9rem;
     line-height: 120%;
     font-weight: 400;
 }
@@ -407,9 +407,6 @@ main>section {
     align-items: flex-end;
 }
 
-
-
-
 /* Our Team Section  */
 
 .our-team-section {
@@ -482,10 +479,8 @@ main .bmi-calculate-section {
 }
 
 .bmi-calculate-section-head-inner {
-
     max-width: 60%;
     margin: 0 auto;
-
 }
 
 .bmi-calculate-section-head .section-description {
@@ -501,7 +496,9 @@ main .bmi-calculate-section {
     margin: 0 auto;
     padding: 3.25rem 0;
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
 }
 
 .bmi-calculate-section .bmi-calculate-section-inner .bmi-chart-column {
@@ -541,71 +538,78 @@ table td {
     margin-bottom: 0.9rem;
 }
 
-
-.bmi-calculate-section .calculation-form {
-    margin: 2.1rem 0;
-    width: 100%;
-
+form{
+    margin: 2.1rem auto;
 }
 
-.calculation-column .calculation-form .form-group {
-    width: 100%;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
+form .form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
-.form-item {
-    width: 45%;
+#activity-form-group{
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-.calculation-form input,
-select {
-    padding: 0.8rem 1.25rem;
+.form-group input,
+.form-group select{
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
     border: none;
-}
-
-.calculation-form input {
-    width: 100%;
-    color: rgba(255, 255, 255, 0.6)
-}
-
-.bmi-calculate-section form .form-group {
-    color: rgba(255, 255, 255, 0.3);
+    padding: 0.9rem 1.25rem;
+    color: rgba(255, 255, 255, 0.6);
     font-size: 1rem;
+    line-height: 1.26rem;
+    border-radius: 0.5rem;
+    appearance: none;
 }
 
-#gender {
-    width: 117%;
-}
-
-option {
-    padding: 10px;
-}
-
-.calculation-form select {
-    width: 108%;
-    color: rgba(255, 255, 255, 0.3);
+.gender-age-form-group,
+.activity-form-group{
     position: relative;
 }
 
-
-.calculation-form select>option {
-    background-color: rgb(57 57 57);
+/* .form-group::after{
+    content: "\f107";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.6);
     position: absolute;
-    width: 100%;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+} */
+ .gender-age-form-group::after,
+ .activity-form-group::after{
+    content: "\f107";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 
-.activity-form-field {
-    width: 100%;
+
+.form-group select option{
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #4f4f4f;
+    display: inline-block;
+    margin: 0.5rem 0;
 }
 
-.bmi-calculate-section .btn-primary {
-    padding: 1rem 4.4rem;
+.form-group input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
 }
+
+/* Calculate part end here 2 */
+
 
 /* Student Reviews section  */
 
@@ -618,6 +622,7 @@ option {
     text-align: center;
     margin: 0 auto;
 }
+
 
 .student-review-section-head .section-description {
     margin-top: 1.25rem;
@@ -642,7 +647,6 @@ option {
     border-radius: 1rem;
     text-align: center;
     background-color: #4f4f4f;
-
 }
 
 .student-img {
@@ -660,6 +664,7 @@ option {
 .student-details .student-name {
     color: var(--primary-font-color);
 }
+
 
 .student-details .student-review-comment {
     color: var(--secondary-font-color);
@@ -682,10 +687,6 @@ footer {
     padding-left: 20px;
     padding-right: 20px;
 }
-
-/* .footer-columns-container{
-
-} */
 
 .footer-inner {
     display: flex;
@@ -749,7 +750,6 @@ footer .footer-links li a {
 
     .section-title {
         font-size: 2rem;
-
     }
 
     .header-section {
@@ -782,7 +782,7 @@ footer .footer-links li a {
     }
 
     .banner-content .banner-title span {
-        font-size: 2.25rem;
+        font-size: 4.25rem;
     }
 
     .banner-description {
@@ -823,8 +823,6 @@ footer .footer-links li a {
         bottom: 31%;
     }
 
-
-
     main section {
         padding-left: 20px;
         padding-right: 20px;
@@ -857,7 +855,6 @@ footer .footer-links li a {
     }
 
     .run-extra-mile-section .run-extra-mile-section-inner {
-
         justify-content: space-between;
         flex-direction: column;
     }
@@ -934,11 +931,9 @@ footer .footer-links li a {
 
     main .bmi-calculate-section {
         margin-top: 2rem;
-        /* padding: 0 20px; */
     }
 
     .bmi-calculate-section-head-inner {
-        /* width: calc(100% - 2.5rem); */
         margin: 0 auto;
     }
 
@@ -988,25 +983,10 @@ footer .footer-links li a {
         gap: 20px;
     }
 
-    .form-item {
-        /* width: calc(100% - 40px); */
-        width: 100%;
+    .form-group input{
+        width: 79%;
     }
 
-    #gender {
-        width: 100%;
-    }
-
-    .calculation-form select {
-        /* width: 112%; */
-        width: 100%;
-        position: relative;
-    }
-
-    .calculation-form select>option {
-        position: absolute;
-        width: 100%;
-    }
 
     .student-review-section {
         margin-top: 3.5rem;
@@ -1176,18 +1156,9 @@ footer .footer-links li a {
         width: 94%;
     }
 
-    #gender {
-        width: 114%;
-    }
 
-    .calculation-form select {
-        width: 106.5%;
-        position: relative;
-    }
-
-    .calculation-form select>option {
-        position: absolute;
-        width: 100%;
+    .form-group input{
+        width: 88%;
     }
 
     .our-team-section .our-team-section-head {
@@ -1221,8 +1192,12 @@ footer .footer-links li a {
     }
 
 
+<<<<<<< HEAD
+}
+=======
 
 
 
 
 }
+>>>>>>> c52854c86afee29543d7bd66980e80178ee93b80
