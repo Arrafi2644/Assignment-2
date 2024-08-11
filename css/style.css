@@ -570,17 +570,6 @@ form .form-group {
     position: relative;
 }
 
-/* .form-group::after{
-    content: "\f107";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    color: rgba(255, 255, 255, 0.6);
-    position: absolute;
-    right: 1.25rem;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-} */
  .gender-age-form-group::after,
  .activity-form-group::after{
     content: "\f107";
